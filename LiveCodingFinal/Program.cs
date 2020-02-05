@@ -47,7 +47,7 @@ namespace LiveCodingFinal
 
             totalVisitors = standardVisitors + additionalVisitors;
             candyNeeded = 3 * totalVisitors;
-            Console.WriteLine(candyNeeded);
+            Console.WriteLine(candyNeeded.ToString());
         }
     }
 }
