@@ -4,7 +4,12 @@ namespace LiveCodingFinal
 {
     class Program
     {
-        static void Main(string weather, string temperature)
+        static void Main()
+        {
+            
+        }
+
+        static double CalculateCandy(string weather, string temperature)
         {
             double standardVisitors = 250;
             double additionalVisitors = 0;
@@ -16,8 +21,8 @@ namespace LiveCodingFinal
                 additionalVisitors += .1 * standardVisitors;
             }
             else if (weather == "Cloudy")
-            { 
-                additionalVisitors += 0 * standardVisitors; 
+            {
+                additionalVisitors += 0 * standardVisitors;
             }
             else if (weather == "Raining")
             {
@@ -47,7 +52,7 @@ namespace LiveCodingFinal
 
             totalVisitors = standardVisitors + additionalVisitors;
             candyNeeded = 3 * totalVisitors;
-            Console.WriteLine(candyNeeded.ToString());
+            return candyNeeded;
         }
     }
 }
